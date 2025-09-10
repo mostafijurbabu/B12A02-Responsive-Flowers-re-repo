@@ -18,15 +18,17 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Noto+Serif:ital,wght@0,100..900;1,100..900&display=swap"
       rel="stylesheet"
     />
+
     <!-- style css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body class="bg-[#F58FF] font-inter">
+  <body class="bg-[#f5f8ff] font-inter">
     <div class="container mx-auto">
       <!-- header -->
+
       <header class="pt-5 mb-16 lg:mb-32">
         <!-- navbar -->
         <nav class="flex items-center justify-between px-2">
@@ -57,7 +59,7 @@
           </div>
           <div class="w-full lg:w-1/2 px-2 lg:px-0 space-y-3">
             <h2
-              class="text-orange-600 font-bold text-2xl lg:text-6xl leading-tight"
+              class="text-orange-600 font-bold text-2xl lg:text-6xl leading-tight font-noto-serif"
             >
               <span class="text-black">Always </span>Fresh <br />
               Flowers
@@ -72,10 +74,14 @@
       </header>
 
       <!-- our plants section -->
-      <section class="px-1">
+
+      <section class="px-1 mb-10 lg:mb-48">
         <!-- section heading -->
+
         <div class="text-center mb-7 lg:mb-9">
-          <h2 class="font-bold text-2xl lg:text-5xl text-orange-500">
+          <h2
+            class="font-bold text-2xl lg:text-5xl text-orange-500 font-noto-serif"
+          >
             Our <span class="text-black">Plants</span>
           </h2>
           <p class="text-sm lg:text-xl text-gray-500 mt-4 w-4/5 mx-auto">
@@ -276,6 +282,131 @@
               >
                 Add To Cart
               </button>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- plants lover section -->
+      <section
+        class="grid grid-cols-1 lg:grid-cols-2 px-1 gap-5 lg:gap-16 items-center mb-36 lg:mb-32"
+      >
+        <!-- section image -->
+        <div class="w-full relative inline-block">
+          <img
+            src="./assets/flower-store.png"
+            alt="Flower Store"
+            class="w-full"
+          />
+          <img
+            src="./assets/trusted-badge.png"
+            class="hidden lg:inline-block absolute -top-30 -right-30 w-80 h-80 drop-shadow-2xl"
+            alt=""
+          />
+        </div>
+        <!-- section details -->
+        <div>
+          <h2
+            class="font-bold text-2xl lg:text-5xl mb-4 lg:mb-5 font-noto-serif"
+          >
+            Flower & Plants <br class="hidden lg:block" />
+            Lover
+          </h2>
+          <ul
+            class="text-gray-500 text-sm lg:text-xl list-disc space-y-8 lg:pl-5 pl-4"
+          >
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+            <li>
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh.
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- latest deal -->
+      <section>
+        <!-- section heading -->
+        <div class="text-center mb-7 lg:mb-9">
+          <h2
+            class="font-bold text-2xl lg:text-5xl text-orange-500 font-noto-serif"
+          >
+            Latest <span class="text-black">Deals</span>
+          </h2>
+          <p class="text-sm lg:text-xl text-gray-500 mt-4 w-4/5 mx-auto">
+            Indulge your senses with the beauty and fragrance of our fresh
+            flower shop. From <br />
+            classic roses to exotic blooms, we offer a wide variety of fresh.
+          </p>
+        </div>
+
+        <!-- section details -->
+        <div
+          class="grid grid-cols-1 lg:grid-cols-3 w-full lg:gap-7 gap-3 pb-10 lg:pb-25"
+        >
+          <!-- box 1 -->
+          <div
+            class="w-full flex flex-col items-center justify-center lg:gap-7 gap-3"
+          >
+            <div class="w-full relative rounded-xl overflow-hidden">
+              <img
+                src="./assets/deal-bloom.png"
+                alt="Bloom Flower"
+                class="w-full object-cover"
+              />
+              <div
+                class="absolute bg-black/40 inset-0 text-white flex items-center justify-center flex-col"
+              >
+                <p class="font-noto-serif font-bold text-xl">
+                  60% Off | Bloom Plant
+                </p>
+                <p class="underline">Shop Now</p>
+              </div>
+            </div>
+            <div class="w-full relative rounded-xl overflow-hidden">
+              <img
+                src="./assets/deal-ana.png"
+                alt="Ana Flower"
+                class="w-full object-cover"
+              />
+              <div
+                class="absolute bg-black/40 inset-0 text-white flex items-center justify-center flex-col"
+              >
+                <p class="font-noto-serif font-bold text-xl">
+                  30% Off | Ana Plant
+                </p>
+                <p class="underline">Shop Now</p>
+              </div>
+            </div>
+          </div>
+          <!-- box 2 -->
+          <div class="w-full lg:col-span-2">
+            <div class="w-full relative rounded-xl overflow-hidden h-full">
+              <img
+                src="./assets/deal-zabo.png"
+                alt="Zabo Flower"
+                class="w-full object-cover h-full"
+              />
+              <div
+                class="absolute bg-black/40 inset-0 text-white flex items-center justify-center flex-col space-y-4"
+              >
+                <p
+                  class="font-noto-serif font-bold text-xl lg:font-bold lg:text-5xl"
+                >
+                  25% Off | Zabo Plant
+                </p>
+                <p class="underline lg:text-2xl lg:font-semibold">Shop Now</p>
+              </div>
             </div>
           </div>
         </div>
