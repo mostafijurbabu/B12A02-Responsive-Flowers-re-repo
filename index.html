@@ -24,5 +24,52 @@
     <!-- style css -->
     <link rel="stylesheet" href="./style.css" />
   </head>
-  <body></body>
+  <body class="bg-[#F58FF] font-inter">
+    <div class="container mx-auto">
+      <!-- header -->
+      <header class="pt-5 mb-16 lg:mb-32">
+        <!-- navbar -->
+        <nav class="flex items-center justify-between px-2">
+          <img src="./assets/logo.png" alt="Logo" class="h-9 lg:h-20" />
+          <ul class="flex items-center gap-9">
+            <li class="font-semibold hidden lg:block cursor-pointer">Home</li>
+            <li class="hidden lg:block text-gray-500 cursor-pointer">Shop</li>
+            <li class="hidden lg:block text-gray-500 cursor-pointer">
+              About Us
+            </li>
+            <li>
+              <i class="fa-solid fa-cart-shopping"></i>
+              <span>Cart ($56)</span>
+            </li>
+          </ul>
+        </nav>
+
+        <!-- banner -->
+        <div
+          class="w-full flex lg:flex-row-reverse items-end flex-col gap-7 lg:gap-3 mt-7 lg:mt-32"
+        >
+          <div class="w-full lg:w-1/2">
+            <img
+              src="./assets/hero-flower.png"
+              alt="Flower banner"
+              class="w-full object-cover"
+            />
+          </div>
+          <div class="w-full lg:w-1/2 px-2 lg:px-0 space-y-3">
+            <h2
+              class="text-orange-600 font-bold text-2xl lg:text-6xl leading-tight"
+            >
+              <span class="text-black">Always </span>Fresh <br />
+              Flowers
+            </h2>
+            <p class="text-gray-500 text-base lg:text-xl">
+              Indulge your senses with the beauty and fragrance of our fresh
+              flower shop. From classic roses to exotic blooms, we offer a wide
+              variety of fresh flowers that are perfect for any occasion.
+            </p>
+          </div>
+        </div>
+      </header>
+    </div>
+  </body>
 </html>
